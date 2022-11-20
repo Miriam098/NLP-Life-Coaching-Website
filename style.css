@@ -113,12 +113,18 @@ width: 50%;
         word-wrap: break-word;
 }
 
-.form__container {
-   
+.box a {
+    text-decoration: none;
+        color: rgb(172, 88, 89);
+        cursor: pointer;
 }
 
-.form__headings {
-    height: 20%;
+.box a:hover {
+    color: rgb(3, 152, 158)
+}
+
+.form__headings, .map__heading {
+    height: 30%;
 }
 
 form {
@@ -127,22 +133,12 @@ form {
     height: 70%;
 }
 
-.form__icons {
+.form__icons, .map__icons {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    height: 30%;
-}
-
-.form__icons a {
-    text-decoration: none;
-    color: rgb(172, 88, 89);
-    cursor: pointer;
-}
-
-.form__icons a:hover {
-    color:rgb(3, 152, 158)
+    height: 20%;
 }
 
 .icon {
@@ -216,6 +212,15 @@ textarea,
     opacity: 0.9;
     transform: translateY(-2.5%);
     box-shadow: 0 0 15px 0 #000;
+}
+
+.map__icons {
+    height: 30%;
+    justify-content: center;
+}
+
+.map__iframe {
+    height: 70%;
 }
 
 /*Footer Section*/
