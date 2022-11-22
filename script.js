@@ -20,6 +20,7 @@ const readMore = () => {
             btn.innerHTML = 'Read Less';
             moreTextOne.style.display = 'inline'
             tilesOne.style.height = 'auto'
+            tilesOne.style.transition = 'all 4s ease-in 2s'
         }
     })
 
