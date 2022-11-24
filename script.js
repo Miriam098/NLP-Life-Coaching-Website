@@ -1,11 +1,21 @@
 let btn = document.getElementById('readMoreBtn');
-let btnTwo = document.getElementById('readMoreBtn2')
+let btnTwo = document.getElementById('readMoreBtn2');
+let btnThree = document.getElementById('readMoreBtn3');
+
 let moreTextOne = document.getElementById('textOne');
 let moreTextTwo = document.getElementById('textTwo')
+let moreTextThree = document.getElementById('textThree')
+
 let dots = document.getElementById('dots')
 let dotsTwo = document.getElementById('dotsTwo')
+let dotsThree = document.getElementById('dotsThree')
+
+
 let tilesOne = document.getElementById('tilesOne')
 let tilesTwo = document.getElementById('tilesTwo')
+
+
+let visionContainer = document.getElementById('visionTextContainer')
 
 
 const readMore = () => {
@@ -28,14 +38,37 @@ const readMore = () => {
         if (dotsTwo.style.display === 'none') {
             dotsTwo.style.display = 'inline';
             btnTwo.innerHTML = 'Read More';
-
             moreTextTwo.style.display = 'none';
         } else {
             dotsTwo.style.display = 'none';
             btnTwo.innerHTML = 'Read Less';
-
             moreTextTwo.style.display = 'inline';
             tilesTwo.style.height = 'auto';
+        }
+    })
+
+    /*btnThree.addEventListener('click', () => {
+        if (dotsThree.style.display === 'inline') {
+            dotsThree.style.display = 'none';
+            btnThree.innerHTML = 'Read Less';
+            moreTextThree.style.display = 'inline';
+        } else {
+            dotsThree.style.display = 'inline';
+            btnThree.innerHTML = 'Read More';
+            moreTextThree.style.display = 'none';
+            visionContainer.style.height = 'auto';
+        }
+    })*/
+
+    btnThree.addEventListener('click', () => {
+        if (dotsThree.style.display === 'none') {
+            dotsThree.style.display = 'inline'
+            btnThree.innerHTML = 'Read More'
+            moreTextThree.style.display = 'none'
+        } else {
+            dotsThree.style.display = 'none'
+            btnThree.innerHTML = 'Read Less'
+            moreTextThree.style.display = 'inline'
         }
     })
 }
