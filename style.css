@@ -23,7 +23,7 @@ body {
   color: #fff;
 }
 
-/*Header Background*/
+/*=======Header Background=======*/
 
 header {
   display: flex;
@@ -38,7 +38,7 @@ header {
   text-align: center;
 }
 
-/*Header Navigation Menu*/
+/*=======Header Navigation Menu=======*/
 
 header nav {
   display: flex;
@@ -138,7 +138,40 @@ button:hover {
   background: #fff !important;
 }
 
-/*Main Content*/
+.book__now__modal {
+  display: none;
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.form___wrapper {
+  position: relative;
+  height: 500px;
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.17);
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 5px;
+}
+
+.close:hover {
+  color: #999;
+  cursor: pointer;
+}
+/*=======Main Content=======*/
 .about__container {
   display: flex;
   padding: 20px;
@@ -147,7 +180,7 @@ button:hover {
   height: 100%;
 }
 
-/*ABOUT SECTION!!*/
+/*=======ABOUT SECTION!!=======*/
 .about__picture {
   width: 50vw;
   padding-right: 20px;
@@ -181,7 +214,7 @@ h3 {
   display: none;
 }
 
-/*SERVICES SECTION!!*/
+/*=======SERVICES SECTION!!=======*/
 
 .services__container {
   display: flex;
@@ -412,7 +445,7 @@ textarea,
   height: 100%;
   border: none;
 }
-/*Footer Section*/
+/*=======Footer Section=======*/
 
 footer {
   height: 100%;
@@ -422,7 +455,7 @@ footer {
   padding: 30px 0;
 }
 
-/* Social Media Icons sections*/
+/* =======Social Media Icons sections=======*/
 
 .fa-brands,
 .fa-solid {
@@ -453,6 +486,13 @@ footer {
   background-color: grey;
 }
 
+.copyright {
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+}
+
 .whatsapp_float {
   position: fixed;
   width: 60px;
@@ -470,7 +510,7 @@ footer {
   margin-top: 16px;
 }
 
-/*For Mobile*/
+/*=======For Mobile=======*/
 @media screen and (max-width: 767px) {
   .whatsapp_icon {
     margin-top: 10px;

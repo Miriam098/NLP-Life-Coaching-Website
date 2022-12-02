@@ -12,7 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>NLP Life Coaching</title>
+    <title>Daphne Olivier - NLP Life Coaching</title>
+    <meta
+      name="description"
+      content="I am a certified NLP Life Coach and Hypnotherapist in Cape Town, Hout Bay."
+    />
     <script
       src="https://kit.fontawesome.com/7af064539f.js"
       crossorigin="anonymous"
@@ -35,9 +39,32 @@
         <div class="header_text text__box">
           <h1>The purpose of our lives is to be <span>happy</span></h1>
           <h3>Let's redefine our reality</h3>
-          <button class="btn" id="bookNowBtn">
-            <span>Book Now</span>
+          <button class="btn modal__btn" id="bookNowBtn">
+            <span>Book Complimentary Session</span>
           </button>
+        </div>
+      </div>
+
+      <div id="modal" class="book__now__modal">
+        <span id="closeModal" class="close">XXXX</span>
+        <div class="form___wrapper">
+          <h1>Book Now</h1>
+          <form action="" method="post">
+            <label for="client-name">Name</label><br />
+            <input type="text" name="name" id="client-name" required />
+
+            <label for="client-email">Email</label><br />
+            <input type="email" name="email" id="client-email" required />
+
+            <label for="client-phone">Phone</label><br />
+            <input type="tel" name="phone" id="client-phone" required />
+
+            <label for="date">Date</label><br />
+            <input type="date" name="date" id="booking-date" required />
+
+            <label for="booking-time">Time</label><br />
+            <input type="time" name="time" id="time" required />
+          </form>
         </div>
       </div>
     </header>
@@ -46,7 +73,7 @@
       <!--About Section-->
       <section id="about" class="about__container">
         <div class="about__picture">
-          <img src="./source/daphne.jpg" alt="Daphne Smiling" />
+          <img src="./source/daphne.jpg" alt="Daphne Olivier - Life Coach" />
         </div>
 
         <div class="about__text">
@@ -344,6 +371,9 @@
         rel="noopener noreferrer"
         class="fa-brands fa-google"
       ></a>
+      <div class="copyright">
+        <p>&copy by Daphne Olivier NLP Life Coaching</p>
+      </div>
     </footer>
     <a
       href="http://wa.me/+27616016805"

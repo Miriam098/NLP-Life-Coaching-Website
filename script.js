@@ -1,24 +1,20 @@
-let btn = document.getElementById('readMoreBtn');
-let btnTwo = document.getElementById('readMoreBtn2');
-let btnThree = document.getElementById('readMoreBtn3');
-
-let moreTextOne = document.getElementById('textOne');
-let moreTextTwo = document.getElementById('textTwo')
-let moreTextThree = document.getElementById('textThree')
-
-let dots = document.getElementById('dots')
-let dotsTwo = document.getElementById('dotsTwo')
-let dotsThree = document.getElementById('dotsThree')
-
-
-let tilesOne = document.getElementById('tilesOne')
-let tilesTwo = document.getElementById('tilesTwo')
-
-
-let visionContainer = document.getElementById('visionTextContainer')
-
-
+/* ===== READ MORE BUTTIONS ===== */
 const readMore = () => {
+    let btn = document.getElementById('readMoreBtn');
+    let btnTwo = document.getElementById('readMoreBtn2');
+    let btnThree = document.getElementById('readMoreBtn3');
+
+    let moreTextOne = document.getElementById('textOne');
+    let moreTextTwo = document.getElementById('textTwo');
+    let moreTextThree = document.getElementById('textThree');
+
+    let dots = document.getElementById('dots');
+    let dotsTwo = document.getElementById('dotsTwo');
+    let dotsThree = document.getElementById('dotsThree');
+
+    let tilesOne = document.getElementById('tilesOne');
+    let tilesTwo = document.getElementById('tilesTwo');
+
     btn.addEventListener('click', () => {
         if (dots.style.display === 'none') {
             dots.style.display = 'inline';
@@ -47,30 +43,46 @@ const readMore = () => {
         }
     })
 
-    /*btnThree.addEventListener('click', () => {
-        if (dotsThree.style.display === 'inline') {
-            dotsThree.style.display = 'none';
-            btnThree.innerHTML = 'Read Less';
-            moreTextThree.style.display = 'inline';
-        } else {
-            dotsThree.style.display = 'inline';
-            btnThree.innerHTML = 'Read More';
-            moreTextThree.style.display = 'none';
-            visionContainer.style.height = 'auto';
-        }
-    })*/
 
     btnThree.addEventListener('click', () => {
         if (dotsThree.style.display === 'none') {
-            dotsThree.style.display = 'inline'
-            btnThree.innerHTML = 'Read More'
-            moreTextThree.style.display = 'none'
+            dotsThree.style.display = 'inline';
+            btnThree.innerHTML = 'Read More';
+            moreTextThree.style.display = 'none';
         } else {
-            dotsThree.style.display = 'none'
-            btnThree.innerHTML = 'Read Less'
-            moreTextThree.style.display = 'inline'
+            dotsThree.style.display = 'none';
+            btnThree.innerHTML = 'Read Less';
+            moreTextThree.style.display = 'inline';
         }
     })
 }
 
 readMore();
+
+/* ===== MODAL OPEN & CLOSE ===== */
+
+const modalBtn = document.getElementById('bookNowBtn');
+const modal = document.getElementById('modal');
+const closeBtn = document.getElementById('closeModal');
+
+
+modalBtn.addEventListener('click', openModal);
+
+function openModal() {
+    modal.style.display = 'block';
+}
+
+closeBtn.addEventListener('click', modalClose);
+
+function modalClose() {
+    modal.style.display = 'none';
+}
+
+window.addEventListener('click', outsideClick);
+
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none'
+    }
+}
+
