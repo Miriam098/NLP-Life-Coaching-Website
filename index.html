@@ -49,21 +49,37 @@
         <span id="closeModal" class="close">XXXX</span>
         <div class="form___wrapper">
           <h1>Book Now</h1>
-          <form action="" method="post">
-            <label for="client-name">Name</label><br />
-            <input type="text" name="name" id="client-name" required />
 
-            <label for="client-email">Email</label><br />
-            <input type="email" name="email" id="client-email" required />
+          <form action="" method="post" class="modal__form">
+            <div class="form-field">
+              <input type="text" name="name" id="client-name" required />
+              <label for="client-name" class="label__name"></label>
+              <span class="content__name">Name</span>
+            </div>
 
-            <label for="client-phone">Phone</label><br />
-            <input type="tel" name="phone" id="client-phone" required />
+            <div class="form-field">
+              <input type="email" name="email" id="client-email" required />
+              <label for="client-email" class="label__name"></label>
+              <span class="content__name">Email</span>
+            </div>
 
-            <label for="date">Date</label><br />
-            <input type="date" name="date" id="booking-date" required />
+            <div class="form-field">
+              <input type="tel" name="phone" id="client-phone" required />
+              <label for="client-phone" class="label__name"></label>
+              <span class="content__name">phone</span>
+            </div>
 
-            <label for="booking-time">Time</label><br />
-            <input type="time" name="time" id="time" required />
+            <div class="form-field">
+              <input type="date" name="date" id="booking-date" required />
+              <label for="date" class="label__name"></label>
+              <span>Date</span>
+            </div>
+
+            <div class="form-field">
+              <input type="time" name="time" id="time" required />
+              <label for="booking-time" class="label__name"></label>
+              <span>Time</span>
+            </div>
           </form>
         </div>
       </div>
@@ -246,6 +262,7 @@
             </div>
           </div>
           <form
+            class="contact__form"
             action="https://formsubmit.co/daphneolivier81@gmail.com"
             method="POST"
           >
