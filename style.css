@@ -389,7 +389,7 @@ h3 {
 .map__heading {
   height: 30%;
 }
-/*
+
 .contact__form {
   display: flex;
   flex-direction: column;
@@ -483,7 +483,7 @@ textarea,
   opacity: 0.9;
   transform: translateY(-2.5%);
   box-shadow: 0 0 15px 0 #000;
-}*/
+}
 
 .map__icons {
   height: 30%;
